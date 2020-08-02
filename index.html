@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QRCode Generator</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+</head>
+<body>
+	<div class="container">
+
+        <table>
+            <caption><img id="logo" src="logo-final.png" alt="amazing"></caption>
+            <thead>
+                <tr>
+                    <th colspan="4" id="heading">QR Code Generator</th>
+                </tr>
+            </thead>
+            <tbody>
+            	<tr>
+            		<td><input type="text" id="text" placeholder="https://github.com/dpatel-8112/"></td>
+            	</tr>
+                <tr>
+                    <td >
+                        <div id="qrcode">
+
+                        </div>
+                    </td>
+                    <td><a id="download" download>Download</a></td>
+                </tr>
+                <tr>
+                    <td id="instruction">Enter URL and Press Enter or Simply click Outside the input Box</td>
+                </tr>
+            </tbody>
+        </table>     
+        
+    </div>
+
+
+
+
+    <script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>
