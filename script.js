@@ -1,6 +1,8 @@
+var download1 = document.getElementById('download');
+
 var qrcode = new QRCode("qrcode",{
-    width: 300,
-    height: 300,
+    width: 200,
+    height: 200,
     colorDark : "#000000",
     colorLight : "#ffffff",
     correctLevel : QRCode.CorrectLevel.H
@@ -21,6 +23,7 @@ makeCode();
 $("#text").
     on("blur", function () {
         makeCode();
+        
         download1.addEventListener('click',download());
     }).
     on("keydown", function (e) {
@@ -34,12 +37,12 @@ $("#text").
 
 
     
-        var download1 = document.getElementById('download');
+        
 
         
         download1.addEventListener('click',download());
             function download(){
-                var img = document.querySelector("div > img");
+                var img = document.querySelector("div#qrcode > img");
 
                 console.log(img.style);
                 download1.setAttribute("href", img.src);
